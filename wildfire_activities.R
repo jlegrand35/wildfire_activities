@@ -13,6 +13,7 @@ DATA = "data/"
 poisson.sim.occ =function(x,Dat){
   # simulation of observing at least 1 fire + selection of corresponding events
   Dat[rpois(length(x), lambda = x)>0, ]
+}
 
 load("dat/DF_Aquitaine.Rdata") 
 #replace with paste0(DATA,"DF_Aquitaine_sim.Rdata")
